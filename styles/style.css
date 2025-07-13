@@ -370,3 +370,374 @@ footer{
 }
 
 
+.container{
+    max-width: 1300px;  /* or 1000px or 90% depending on your design */
+    margin: 0 auto;     /* This centers the container horizontally */
+    padding: 0 20px;    /* Optional: adds some space inside the container */
+    
+}
+
+
+/* banner styles */
+
+.header-banner {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* or your image width */
+  margin: 0 auto;
+  overflow: hidden; /* prevents overlay from spilling out */
+}
+.header-banner img {
+  width: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust darkness here */
+  z-index: 1;
+  pointer-events: none; /* so it doesn't block text/button clicks */
+  border-radius: 10px;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 2;
+}
+.banner-text p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* New Year Photo styles */
+.offer-sale {
+  
+  text-align: center;
+  /* padding: 60px 20px; */
+}
+.offer-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px; /* spacing between lines */
+
+}
+
+.offer-title{
+    font-size: 60px;
+    font-weight: bold;
+    color: #FF0000;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+.offer-sub-title{
+    font-size: 10px;
+    color: #FF0000;
+    margin-bottom: 0;
+    
+
+}
+.offer-sub-sub-title{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+}
+.offer-image {
+  width: 600px;         /* adjust size as needed */
+  margin: 300px 0;       /* space above and below */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* new-year-graphic-text styles */
+.new-year-graphic{
+  position: relative;
+  /* width: 100%; */
+  max-width: 900px; /* or your image width */
+  margin: 10px auto;
+  overflow: hidden; /* prevents overlay from spilling out */
+}
+.new-year-graphic img {
+  width: 100%;
+  display: block;
+}
+
+.new-year-graphic-text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Changed from 50% to a fixed left margin */
+  transform: translateY(-50%); /* Only vertical centering */
+  z-index: 2;
+  max-width: 500px;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.new-year-graphic-text h3 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.new-year-graphic-text p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+/* address styles */
+.address{
+
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #edc9d5, #ffffff); /* soft pink to white */
+  width: 100%;
+  max-width: 900px;
+  margin: 10px auto;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.address p{
+    
+  font-weight: 500; /* Instead of font-size: 500 */
+  font-size: 16px;   /* Add a font-size if needed */
+}
+
+.red{
+    color: #FF0000;
+}
+.btn{
+    color: #fff;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 3px;
+    
+}
+.btn:hover {
+  background-color: #cc0000;
+}
+
+/* best-offer styles */
+.best-offer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 10px
+}
+.best-offer-title{
+    color: #FF0000;
+    font-size: 15px;
+    margin-bottom: 0;
+
+}
+.best-offer-sub-title{
+    font-size: 30px;
+    width: 200%;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+.best-offer-para{
+    color: #070211;
+    font-size: 10px;
+    width: 150px;
+    margin-top: 0;
+    
+}
+
+.year{
+    color: #FF0000;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.year-image{
+    width: 70px;
+   height: auto;
+}
+/* holidays sale styles */
+.holidays-sale{
+    max-width: 900px;
+    margin: 10px auto;
+    
+}
+.holidays-sale-content{
+    text-align: center;
+}
+.holidays-sale-para1{
+    font-size: 15px;
+}
+.holidays-sale-content h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.holidays-sale-para2{
+    color: #070211;
+    font-size: 10px; 
+    width: 30%;
+    margin: 0 auto; 
+   text-align: center;
+   word-wrap: break-word;
+}
+.image-container{
+    position: relative;
+    display: inline-block; 
+}
+.back-image{
+    max-width: 900px;
+    margin: 300px auto 10px auto;
+    display: block;   
+
+}
+.front-image{
+    position: absolute;          /* take out of document flow */
+    top: 60%;                    /* 50% down from top of container */
+    left: 20%;                   /* 50% in from left of container */
+    transform: translate(-50%,-50%); /* center it exactly */
+    z-index: 10;                 /* makes sure it sits above the bg image */
+    pointer-events: none;        /* clicks “pass through” if needed */
+    height: 250px;
+
+}
+.discount-image{
+    position: absolute;          /* take out of document flow */
+    top: 20%;
+    /* top: 10%;                    50% down from top of container */ 
+    right: 10%;                   /* 50% in from left of container */
+    /* transform: translate(-50%,-50%); center it exactly */
+    z-index: 10;                 /* makes sure it sits above the bg image */
+    pointer-events: none;        /* clicks “pass through” if needed */
+    height: 150px;
+
+}
+
+/* best gift styles */
+.best-gift, .best-gift-images{
+  margin: 0 auto;
+  max-width: 900px;
+}
+.best-gift-title{
+  color: #FF0000;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+ 
+}
+.best-gift-sub-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.best-gift-para{
+    color: #070211;
+    font-size: 10px; 
+    width: 30%;
+    /* margin: 0 auto;  */
+   /* text-align: center; */
+   word-wrap: break-word;  */
+   /* text-align: center; */
+   word-wrap: break-word;
+  
+
+}
+.best-gift-images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 images per row */
+  gap: 10px;
+  justify-items: left;
+  margin-top: 30px;
+}
+.best-gift-images img{
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+}
+  
+.subscribe{
+  margin: 30px auto;
+  max-width: 900px;
+  text-align: center;
+  background-color: #dbafbd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+.subscribe img{
+  height: 100px;
+  width: 100px;
+}
+.subscribe h3{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.subscribe p{
+  color: #070211;
+  font-size: 10px; 
+  width: 30%;
+  word-wrap: break-word;
+  margin: 10px auto; 
+
+}
+
+.input-section{
+  display: inline-flex;
+  height: 40px;
+  
+} 
+.input-section input{
+  background-color: #ffffff;
+  color: #070211;
+  border: none; /* remove right border so it merges with button */
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 300px;
+  
+}
+.input-section button{
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100px;
+}
+
+/* footer styles */
+footer{
+  background-color: #070211;
+  color: #ffffff;
+  
+}
+.footer-content{
+  padding: 60px;
+}
+.address-contact{
+  display: flex; 
+  justify-content: space-around;
+}
+.logo-image {
+  /* width: 100%; */
+  height: 15px; 
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  gap: 15px; /* optional: adds space between icons */
+  margin: 20px 0; /* optional: adds spacing above/below */
+}
+
